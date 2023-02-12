@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+  margin: 3rem;
   border-radius: 15px;
   width: 620px;
   height: 420px;
@@ -110,4 +111,46 @@ button {
 button:hover {
   cursor: pointer;
   background-color: hsl(159, 50%, 26%);
+}
+
+@media (max-width: 430px) {
+  br {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+    width: 280px;
+    height: 520px;
+  }
+
+  img {
+    content: url(/images/image-product-mobile.jpg);
+    height: 100%;
+  }
+  .left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-side {
+    flex: 4;
+    justify-content: flex-start;
+  }
+
+  .elements {
+    margin-left: 1.5rem;
+  }
+
+  .perfume-name {
+    font-size: 28px;
+  }
+
+  .price {
+    margin-bottom: 10px;
+  }
+  button {
+    margin: -0.5rem;
+  }
 }
