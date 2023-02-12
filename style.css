@@ -124,7 +124,7 @@ button:hover {
   }
 
   img {
-    content: url(/images/image-product-mobile.jpg);
+    content: url(images/image-product-mobile.jpg);
     height: 100%;
   }
   .left-side {
